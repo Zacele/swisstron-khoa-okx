@@ -47,7 +47,7 @@ async function main() {
   fs.writeFileSync(deployedAddressPath, fileContent, { encoding: "utf8" });
   console.log("Address written to deployed-address.ts");
 }
-
+// npx hardhat run scripts/proxy/deploy.ts --network swisstronik
 main()
   .then(() => process.exit(0))
   .catch((error) => {
